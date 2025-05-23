@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bienestar y Rutinas</title>
+  <link rel="stylesheet" href="./estilos/styles.css"/>
+</head>
+<body>
+  
+  <div id="login-container" class="login-section">
+    <h2>Inicia sesión o regístrate</h2>
+    <form id="auth-form" class="login-form">
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Ingresar / Registrarse</button>
+      <p id="login-msg"></p>
+    </form>
+  </div>
+
+  
+  <div id="main-content" style="display: none;">
+    <header class="header">
+      <h1>Bienestar Total </h1>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#beneficios">Beneficios</a>
+        <button onclick="logout()">Cerrar sesión</button>
+        <button onclick="toggleDarkMode()"></button>
+      </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+      <h2>Encuentra tu equilibrio cuerpo - mente</h2>
+      <p>Te acompañamos a construir una rutina saludable y sostenible</p>
+    </section>
+
+    <section class="section beneficios" id="beneficios">
+      <h2>¿Qué encontrarás?</h2>
+      <div class="benefits-grid">
+        <div class="card">
+          <h3> Ejercicio</h3>
+          <p>Rutinas simples para activarte desde casa.</p>
+        </div>
+        <div class="card">
+          <h3> Meditación</h3>
+          <p>Respira profundo y conecta contigo.</p>
+        </div>
+        <div class="card">
+          <h3> Alimentación</h3>
+          <p>Consejos básicos para comer mejor.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Bienestar Total. Proyecto académico.</p>
+    </footer>
+  </div>
+
+  <script src="./logica/logica.js"></script>
+</body>
+</html>
+
+
