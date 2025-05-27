@@ -1,143 +1,131 @@
-:root {
-  --bg-light: #f5f5f5;
-  --bg-dark: #121212;
-  --text-light: #222;
-  --text-dark: #f9f9f9;
-  --primary: #4CAF50;
-  --accent: #81C784;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-light);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f2f9ff;
+  color: #333;
 }
 
-.header {
-  background-color: var(--primary);
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  background-color: #0077cc;
   color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.nav {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
+nav a {
+  margin-left: 1.5rem;
   font-weight: bold;
 }
 
+/* HERO */
 .hero {
-  padding: 3rem 2rem;
-  text-align: center;
-  background: linear-gradient(120deg, var(--accent), var(--primary));
-  color: white;
-}
-
-.section {
-  padding: 3rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  height: 80vh;
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  text-align: center;
 }
 
-.benefits-grid {
+.hero h1 {
+  font-size: 3rem;
+}
+
+/* DESTINOS */
+.destinos {
+  padding: 2rem;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
   background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-.login {
-  background: #e0f2f1;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-.login-form {
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3,
+.card p {
+  padding: 0.5rem 1rem;
+}
+
+/* FORMULARIO */
+.reserva {
+  padding: 2rem;
+  background: #e6f2ff;
+  display: none;
+}
+
+.reserva form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.reserva input,
+.reserva select,
+.reserva button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* OPINIONES */
+.opiniones {
+  padding: 2rem;
+  background: white;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 400px;
-  margin: 0 auto;
 }
 
-.login input {
-  padding: 0.8rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+/* LOGIN */
+.login {
+  padding: 2rem;
+  text-align: center;
 }
 
-.login button {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+.login form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  gap: 1rem;
 }
 
-.footer {
-  background: #333;
+/* FOOTER */
+footer {
+  background: #0077cc;
   color: white;
   text-align: center;
   padding: 1rem;
-  margin-top: auto;
-}
-
-.toggle-dark {
-  background: white;
-  color: var(--primary);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.dark-mode {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
-
-.dark-mode .card {
-  background: #1e1e1e;
-  color: var(--text-dark);
-}
-
-.dark-mode .login {
-  background: #263238;
-}
-.login-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 2rem;
+  margin-top: 2rem;
 }

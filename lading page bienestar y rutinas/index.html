@@ -1,65 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bienestar y Rutinas</title>
-  <link rel="stylesheet" href="./estilos/styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiReserva</title>
+  <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 <body>
-  
-  <div id="login-container" class="login-section">
-    <h2>Inicia sesión o regístrate</h2>
-    <form id="auth-form" class="login-form">
-      <input type="email" id="email" placeholder="Correo electrónico" required />
-      <input type="password" id="password" placeholder="Contraseña" required />
-      <button type="submit">Ingresar / Registrarse</button>
-      <p id="login-msg"></p>
-    </form>
-  </div>
+  <header>
+    <h2>MiReserva</h2>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#reserva">Reservas</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
 
-  
-  <div id="main-content" style="display: none;">
-    <header class="header">
-      <h1>Bienestar Total </h1>
-      <nav class="nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#beneficios">Beneficios</a>
-        <button onclick="logout()">Cerrar sesión</button>
-        <button onclick="toggleDarkMode()"></button>
-      </nav>
-    </header>
+  <section class="hero">
+    <h1>Descubrí tu próximo destino con un solo clic</h1>
+  </section>
 
-    <section class="hero" id="inicio">
-      <h2>Encuentra tu equilibrio cuerpo - mente</h2>
-      <p>Te acompañamos a construir una rutina saludable y sostenible</p>
-    </section>
-
-    <section class="section beneficios" id="beneficios">
-      <h2>¿Qué encontrarás?</h2>
-      <div class="benefits-grid">
-        <div class="card">
-          <h3> Ejercicio</h3>
-          <p>Rutinas simples para activarte desde casa.</p>
-        </div>
-        <div class="card">
-          <h3> Meditación</h3>
-          <p>Respira profundo y conecta contigo.</p>
-        </div>
-        <div class="card">
-          <h3> Alimentación</h3>
-          <p>Consejos básicos para comer mejor.</p>
-        </div>
+  <section class="destinos" id="destinos">
+    <h2>Destinos Populares</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?paris" alt="Paris">
+        <h3>París</h3>
+        <p>Desde $800 USD</p>
       </div>
-    </section>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?bali" alt="Bali">
+        <h3>Bali</h3>
+        <p>Desde $600 USD</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/300x200/?newyork" alt="NY">
+        <h3>New York</h3>
+        <p>Desde $950 USD</p>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>© 2025 Bienestar Total. Proyecto académico.</p>
-    </footer>
-  </div>
+  <section class="reserva" id="reserva">
+    <h2>Reserva tu Viaje</h2>
+    <form id="formReserva">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Email" required>
+      <select required>
+        <option value="">Elige tu destino</option>
+        <option value="Paris">París</option>
+        <option value="Bali">Bali</option>
+        <option value="New York">New York</option>
+      </select>
+      <input type="date" required>
+      <input type="date" required>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <section class="opiniones" id="opiniones">
+    <h2>Lo que dicen nuestros viajeros</h2>
+    <p>"Una experiencia inolvidable, ¡todo salió perfecto!" - Ana G.</p>
+    <p>"Reservar fue súper fácil y rápido. Volveré a usar MiReserva." - Carlos M.</p>
+  </section>
+
+  <section class="login" id="login">
+    <h2>Login / Registro</h2>
+    <form id="formLogin">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MiReserva - Todos los derechos reservados</p>
+  </footer>
 
   <script src="./logica/logica.js"></script>
 </body>
 </html>
-
-
