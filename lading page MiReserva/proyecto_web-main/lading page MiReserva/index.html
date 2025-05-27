@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiReserva</title>
+  <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+  <header>
+    <h2>MiReserva</h2>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#reserva">Reservas</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#login">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Descubrí tu próximo destino con un solo clic</h1>
+  </section>
+
+ <section class="destinos" id="destinos">
+  <h2>Destinos Populares</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/paris.jpg" alt="París">
+      <h3>París</h3>
+      <p>Desde $800 USD</p>
+    </div>
+    <div class="card">
+      <img src="images/londres.jpg" alt="Londres">
+      <h3>Londres</h3>
+      <p>Desde $600 USD</p>
+    </div>
+    <div class="card">
+      <img src="images/newyork.jpg" alt="New York">
+      <h3>New York</h3>
+      <p>Desde $950 USD</p>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+  <section class="reserva" id="reserva">
+    <h2>Reserva tu Viaje</h2>
+    <form id="formReserva">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Email" required>
+      <select required>
+        <option value="">Elige tu destino</option>
+        <option value="Paris">París</option>
+        <option value="Londres">Londres</option>
+        <option value="New York">New York</option>
+      </select>
+      <input type="date" required>
+      <input type="date" required>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <section class="opiniones" id="opiniones">
+    <h2>Lo que dicen nuestros viajeros</h2>
+    <p>"Una experiencia inolvidable, ¡todo salió perfecto!" - Ana G.</p>
+    <p>"Reservar fue súper fácil y rápido. Volveré a usar MiReserva." - Carlos M.</p>
+  </section>
+
+  <section class="login" id="login">
+    <h2>Login / Registro</h2>
+    <form id="formLogin">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MiReserva - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="./logica/logica.js"></script>
+</body>
+</html>
