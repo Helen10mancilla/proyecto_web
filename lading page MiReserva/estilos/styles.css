@@ -30,6 +30,42 @@ nav a {
   margin-left: 1.5rem;
   font-weight: bold;
 }
+nav button#btnLoginHeader {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#listaReservas {
+  list-style: none;
+  margin-top: 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+#listaReservas li {
+  background: #fff;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#listaReservas li button {
+  background: #0077cc;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
 
 /* HERO */
 .hero {
