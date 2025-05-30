@@ -10,12 +10,11 @@
   <header>
     <h2>MiReserva</h2>
     <nav>
-  <a href="#">Inicio</a>
-  <a href="#destinos">Destinos</a>
-  <a href="#opiniones">Opiniones</a>
-  <button id="btnLoginHeader">Login</button>
-</nav>
-
+      <a href="#">Inicio</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#reserva">Reservas</a>
+      <a href="#opiniones">Opiniones</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -31,7 +30,7 @@
         <p>Desde $800 USD</p>
       </div>
       <div class="card">
-        <img src="./img/london.jpg" alt="London">
+        <img src="./img/london.jpg" alt="Londres">
         <h3>Londres</h3>
         <p>Desde $600 USD</p>
       </div>
@@ -43,41 +42,30 @@
     </div>
   </section>
 
- <section class="reserva" id="reserva">
-  <h2>Reserva tu Viaje</h2>
-  <form id="formReserva">
-    <input type="text" id="nombreReserva" placeholder="Nombre completo" required>
-    <input type="email" id="emailReserva" placeholder="Email" required>
-    <select id="destinoReserva" required>
-      <option value="">Elige tu destino</option>
-      <option value="Paris">París</option>
-      <option value="Londres">Londres</option>
-      <option value="New York">New York</option>
-    </select>
-    <input type="date" id="fechaInicio" required>
-    <input type="date" id="fechaFin" required>
-    <button type="submit">Reservar</button>
-  </form>
-
-  <h3>Tus Reservas</h3>
-  <ul id="listaReservas"></ul>
-</section>
-
+  <section class="reserva" id="reserva">
+    <h2>Reserva tu Viaje</h2>
+    <form id="formReserva">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Email" required>
+      <select required>
+        <option value="">Elige tu destino</option>
+        <option value="Paris">París</option>
+        <option value="Londres">Londres</option>
+        <option value="New York">New York</option>
+      </select>
+      <input type="date" required>
+      <input type="date" required>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
 
   <section class="opiniones" id="opiniones">
     <h2>Lo que dicen nuestros viajeros</h2>
-    <p>"Una experiencia inolvidable, ¡todo salió perfecto!" - Ana G.</p>
-    <p>"Reservar fue súper fácil y rápido. Volveré a usar MiReserva." - Carlos M.</p>
+    <p>"Una experiencia inolvidable, ¡todo salió perfecto!" - Ana.</p>
+    <p>"Reservar fue súper fácil y rápido. Volveré a usar MiReserva." - Carlos.</p>
   </section>
 
-  <section class="login" id="login">
-    <h2>Login / Registro</h2>
-    <form id="formLogin">
-      <input type="text" id="usuario" placeholder="Usuario" required>
-      <input type="password" id="clave" placeholder="Contraseña" required>
-      <button type="submit">Ingresar</button>
-    </form>
-  </section>
+  
 
   <footer>
     <p>&copy; 2025 MiReserva - Todos los derechos reservados</p>
