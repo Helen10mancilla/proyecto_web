@@ -2,7 +2,7 @@ const formLogin = document.getElementById('formLogin');
 const formReserva = document.getElementById('formReserva');
 const seccionReserva = document.querySelector('.reserva');
 
-const usuarioGuardado = localStorage.getItem('usuario');
+const usuarioGuardado = localStorage.getItem('Nombre Completo');
 if (usuarioGuardado) {
   seccionReserva.style.display = 'block';
 }
